@@ -1,0 +1,82 @@
+---
+title: "Core Web Vitals Playbook for Marketing Websites"
+description: "How to improve LCP, CLS, and INP on lead-generation websites without sacrificing brand or campaign speed."
+date: "2025-12-28"
+lastUpdated: "2026-02-14"
+category: "Web Performance"
+tags:
+  - "Core Web Vitals"
+  - "Website Speed"
+  - "CRO"
+author: "Sagnik Dutta"
+readingTime: "8 min read"
+featured: true
+faqs:
+  - question: "What is a good mobile LCP target?"
+    answer: "Aim for 2.5 seconds or below on core landing pages."
+  - question: "Do animations always hurt performance?"
+    answer: "No. Lightweight, deferred animations with reduced-motion support can preserve UX quality."
+  - question: "Should we remove all third-party scripts?"
+    answer: "Not always. Keep only scripts that directly support measurable business decisions."
+---
+
+## Why performance is a growth problem, not a developer metric
+
+Core Web Vitals are often discussed as technical benchmarks, but for marketing sites they are fundamentally conversion variables. Slow page experience weakens trust, reduces engagement depth, and lowers ad efficiency. When your landing page lags on mobile, every paid click becomes more expensive.
+
+## Priority 1: Improve LCP on conversion pages
+
+Largest Contentful Paint (LCP) usually suffers because hero sections are overloaded with heavy images, video backgrounds, or blocking scripts.
+
+### Actions that work quickly
+
+- Use optimized images with explicit dimensions.
+- Prioritize above-the-fold media loading only.
+- Avoid giant font payloads and too many weights.
+- Minimize third-party tag execution before first interaction.
+
+If your hero contains motion, load critical text first and animate secondary layers later.
+
+## Priority 2: Control CLS through layout discipline
+
+Cumulative Layout Shift (CLS) harms perceived quality immediately. It usually appears when components load without fixed dimensions or when late-injected banners push content.
+
+### CLS checklist
+
+- Reserve space for media and embeds.
+- Keep sticky UI dimensions stable between states.
+- Avoid dynamic font swaps that alter spacing heavily.
+- Inject consent and promo banners in pre-allocated containers.
+
+## Priority 3: Protect INP with interaction hygiene
+
+Interaction to Next Paint (INP) reflects input responsiveness. Heavy client-side scripts and large hydration bundles often cause delays.
+
+### Practical improvements
+
+- Split non-critical scripts with dynamic imports.
+- Use server components wherever possible.
+- Keep form validation lightweight and synchronous.
+- Defer non-essential analytics and widgets.
+
+## Performance and SEO link directly
+
+Fast pages increase crawl efficiency and reduce bounce behavior, both of which influence organic outcomes. Search performance and conversion quality improve together when technical hygiene is consistent.
+
+Use structured templates and run monthly checks for top-entry pages. If a campaign page goes live without performance checks, acquisition costs will often drift upward.
+
+## Suggested monthly monitoring workflow
+
+1. Review top 10 landing pages by traffic.
+2. Check mobile LCP, CLS, INP patterns.
+3. Identify one high-impact fix per page.
+4. Re-test after deployment.
+5. Track impact on conversion and bounce.
+
+For implementation support, see our [Web Development Services](/services/web-development).
+
+## FAQ
+
+### Should Core Web Vitals be optimized before SEO content?
+
+Do both in parallel on key pages. Speed without content depth underperforms, and deep content on slow pages also underperforms.
